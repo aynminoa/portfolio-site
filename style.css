@@ -274,26 +274,9 @@ body{
     position: relative;
 }
 
-.w-list .caption{
-    font-size: 100%;
-    text-align: center;
-	padding-top:95px;
-	color:#fff;
-}
-
-.w-list .mask {
-	width: 370px;
-	height:	223px;
-	position:absolute;	/* 絶対位置指定 */
-	top: 0;
-	left: 15px;
-	opacity: 0;	/* マスクを表示しない */
-	background-color: rgba(0,0,0,0.4);	/* マスクは半透明 */
-	-webkit-transition:	all 0.2s ease;
-	transition:	all 0.2s ease;
-}
-.w-list:hover .mask {
-	opacity: 1;	/* マスクを表示する */
+.w-list:hover img{
+    opacity: 0.6;
+    transition: all 0.3s;
 }
 
 .w-list .comingmore{
