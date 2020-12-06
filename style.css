@@ -80,7 +80,18 @@ body{
     color: #CC0000;
 }
 
+.container-fluid{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inner{
+    width: 100%;
+}
+
 .about{
+    width: 100%;
+    margin: 0 auto;
     padding-top:60px;
     padding-bottom: 120px;
     background-color: rgba(124,85,6,0.2);
@@ -106,21 +117,16 @@ body{
    left:47%;
 }
 
-.inner{
-    width: 1200px;
-    margin: 0 auto;
-}
-
 .a-left{
-    height: 350px;
+    width: auto;
+    height: 320px;
     background: url(images/me.png);
     background-size:cover;
     background-position: left center;
 }
 
-
 .a-right{
-    margin-left: 50px;
+    margin-left:40px;
 }
 
 
@@ -422,8 +428,8 @@ textarea{
         padding-top: 150px;
     }
     .w-list .mask {
-        width: 95%;
-        height:91%;
+        width: 95.5%;
+        height:91.5%;
     }
 
     .form{
