@@ -1,0 +1,432 @@
+body{
+    margin: 0;
+    font:Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container{
+    padding: 0;
+    margin: 0;
+}
+
+
+.block1 {
+    color: #1a1a1a;
+    background: rgba(124,85,6,0.2);
+  }
+.block1 p {
+    /*width: 60%;*/
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 25%;
+    font-size: 25px;
+    text-align: center;
+    color: 	#FFF;
+}
+
+.block1 .name{
+    font-size: 70px;
+    margin-top: 20px;
+}
+
+.block1 .red{
+    color: #CC0000;
+}
+  
+.block2 {
+    /*レイアウト用のCSS*/
+    padding: 0 0 10px 0;
+    color: #ccc;
+}
+.block1 {
+    position: relative;
+    padding: 100px 0 200px 0;
+    
+}
+.block2 {
+    position: relative;
+    z-index: 0;
+    padding:10px 0 100px 0;
+    background:#FFF;
+}
+.block2::after{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 0;
+   
+    /*四角形を傾けます*/
+    transform: skewY(6deg);
+    transform-origin: top right;
+   
+    z-index: -1;
+    width:100%;
+    height:100%;
+    background:#FFF;
+}
+
+.block2 p{
+    font-size: 18px;
+    letter-spacing: 6;
+    padding-bottom: 20px;
+    padding-left: 20%;
+}
+
+.block2 a{
+    color: #ccc;
+}
+
+.block2 a:hover{
+    text-decoration: none;
+    color: #CC0000;
+}
+
+.about{
+    padding-top:60px;
+    padding-bottom: 120px;
+    background-color: rgba(124,85,6,0.2);
+}
+
+.about h2{
+    color: #fff;
+    font-size: 35px;
+    position: relative;
+    margin-bottom: 60px;
+    letter-spacing: 1.2;
+    text-align: center;
+}
+
+.about h2::after{
+    content:"";
+   display:block;
+   width:80px;
+   height:3px;
+   background-color:#CC0000;
+   position:absolute;
+   bottom:-10;
+   left:47%;
+}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.a-left{
+    height: 350px;
+    background: url(images/me.png);
+    background-size:cover;
+    background-position: left center;
+}
+
+
+.a-right{
+    margin-left: 50px;
+}
+
+
+.a-name{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.white{
+    font-size: 16px;
+    color: #fff;
+}
+
+.a-right p{
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+
+.skills{
+    padding-top:60px;
+    padding-bottom: 100px;
+}
+
+.skills h2{
+    color: #ccc;
+    font-size: 35px;
+    position: relative;
+    margin-bottom: 60px;
+    letter-spacing: 1.2;
+    text-align: center;
+}
+
+.skills h2::after{
+    content:"";
+   display:block;
+   width:40px;
+   height:3px;
+   background-color:#CC0000;
+   position:absolute;
+   bottom:-10;
+   left:48.5%;
+}
+
+.skills p{
+    line-height:1.5;
+    font-size: 14px;
+}
+
+.coding{
+    text-align: center;
+
+}
+
+.s-images{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.s-images img{
+    width:32%;
+    padding: 20px 10px;
+}
+
+.s-coding{
+    margin: 10px 20px 20px;
+}
+.s-html{
+    margin-left: 15px;
+}
+
+.s-images .smartphone{
+    margin-top: 20px;
+    padding-left: 0;
+    height: 100%;
+}
+
+.design{
+    text-align: center;
+}
+
+.s-design{
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.s-other{
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.s-other .wordpress{
+    width: 32%;
+}
+
+.s-other .lang{
+    width: 45%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.other{
+    text-align: center;
+}
+.works{
+    padding-top:60px;
+    padding-bottom: 70px;
+    background-color: rgba(124,85,6,0.2);
+}
+
+.works h2{
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    letter-spacing: 1.2;
+}
+
+.works h2::after{
+   content:"";
+   display:block;
+   width:50px;
+   height:3px;
+   background-color:#CC0000;
+   position:absolute;
+   bottom:-10;
+   left:48.5%;
+}
+
+.works p{
+    font-size: 14px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.works img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.w-list{
+    position: relative;
+}
+
+.w-list .caption{
+    font-size: 100%;
+    text-align: center;
+	padding-top:95px;
+	color:#fff;
+}
+
+.w-list .mask {
+	width: 370px;
+	height:	223px;
+	position:absolute;	/* 絶対位置指定 */
+	top: 0;
+	left: 15px;
+	opacity: 0;	/* マスクを表示しない */
+	background-color: rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:	all 0.2s ease;
+}
+.w-list:hover .mask {
+	opacity: 1;	/* マスクを表示する */
+}
+
+.w-list .comingmore{
+    padding-top: 80px;
+}
+    
+.contact{
+    padding-top:60px;
+    padding-bottom: 50px;
+}
+
+.contact h2{
+    color: #ccc;
+    font-size: 35px;
+    position: relative;
+    margin-bottom: 40px;
+    letter-spacing: 1.2;
+    text-align: center;
+}
+
+.contact h2::after{
+    content:"";
+   display:block;
+   width:70px;
+   height:3px;
+   background-color:#CC0000;
+   position:absolute;
+   bottom:-10;
+   left:47%;
+}
+
+.contact p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form{
+    width:600px ;
+    margin: 0 auto;
+}
+
+label{
+    display: block;
+    padding-bottom: 20px;
+}
+
+input{
+    display: block;
+    width: 100%;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+}
+
+.form_content{
+    margin-bottom: 30px;
+}
+
+.button{
+    background:#CC0000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    width: 200px;
+    padding: 16px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer{
+    padding: 30px 0;
+    background: rgba(124,85,6,0.2);
+    color: #FFF;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:780px){
+    .block1 p {
+        padding-left: 0;
+    }
+
+    .block1 .name{
+        font-size: 45px;
+    }
+
+    .about{
+        padding-bottom: 50px;
+    }
+    .about h2{
+        font-size: 25px;
+    }
+    .about h2::after{
+        width: 40px;
+    }
+
+    .inner{
+        width: 100%;
+    }
+
+    .a-right{
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .coding{
+        margin-bottom: 80px;
+    }
+
+    .design{
+        margin-bottom: 80px;
+    }
+    .s-design{
+        margin-top: 10px;
+    }
+
+    .s-other{
+        margin-top: 10px;
+    }
+    .s-other .lang{
+        margin-top: 20px;
+    }
+
+    .works p{
+        margin-bottom: 60px;
+    }
+    .w-list .caption{
+        padding-top: 150px;
+    }
+    .w-list .mask {
+        width: 95%;
+        height:91%;
+    }
+
+    .form{
+        width: 400px;
+    }
+}

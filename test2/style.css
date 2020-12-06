@@ -1,0 +1,459 @@
+h1,h2,h3,ul,li,p{
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+
+body{
+    color: #666666;
+    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    margin: 0;
+    background-color: #dddddd;
+}
+
+.header{
+    text-align: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 5px solid #0F3ADA;
+    background-color: #ffffff;
+}
+
+img{
+    max-width: 100%;
+}
+
+.logo{
+    width: 300px;
+    padding: 35px 50px 35px;
+}
+
+
+nav ul{
+    list-style: none;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 65px;
+}
+
+nav ul a{
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: 1px solid #eeeeee;
+    text-decoration: none;
+    color: #666666;
+
+}
+
+.menu-others:hover{
+    background-color:#E6EBFA ;
+    transition: 0.5s;
+    position: relative;
+
+}
+
+
+.menu-home:after{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-color: #0F3ADA;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+
+
+nav ul li{
+    font-weight: bold;
+
+}
+nav ul li:hover{
+    color: #0F3ADA;
+}
+
+.menu-home{
+    position: relative;
+    background-color:#E6EBFA ;
+
+}
+.menu-home::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-color: #0F3ADA;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+
+
+.nav-title{
+    font-weight: normal;
+    font-size: 12px;
+    color: #cccccc;
+}
+
+
+
+.center{
+    overflow: hidden;
+    margin: 35px 30px 0px 30px;
+}
+
+.main{
+    float: left;
+    width: 70%;
+
+}
+
+h2{
+    background-color: #0F3ADA;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+
+
+section{
+    margin-bottom: 70px;
+}
+
+section p{  
+    margin: 10px 20px 18px 20px;
+    line-height: 2;
+    font-size: 15px;
+}
+
+section ul{
+    list-style: none;
+    margin: 20px;
+}
+
+.date{
+    color: #0F3ADA;
+    margin-right: 30px;
+}
+
+section li{
+    border-bottom:2px solid #eeeeee;
+    padding: 2px 0px;
+}
+
+.log{
+    text-align: right;
+    margin-right: 30px;
+}
+
+.log a{
+    color: #666666;
+}
+
+.log a:hover{
+    color: #0F3ADA;
+    text-decoration: none;
+}
+
+h3{
+    padding:  8px 20px;
+    background  : linear-gradient(to bottom, #ffffff, #eeeeee);
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+
+p a{
+    color: #666666;
+}
+
+p a:hover{
+    color: #0F3ADA;
+    text-decoration: none;
+}
+
+.point{
+    color:#FF0000;
+    font-weight: bold;
+}
+
+.h3-red {
+    color: #FF0000;
+}
+
+.side{
+    width: 30%;
+    float: left;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.side-box1{
+    padding:  8px 8px;
+    background  : linear-gradient(to bottom, #ffffff, #eeeeee);
+    border: 1px solid #cccccc;
+}
+
+.box-header{
+    padding: 17px 10px;
+    margin: 0;
+    background-color: #eeeeee;
+    font-weight: bold;
+    border-top: 5px solid #0F3ADA;
+}
+
+ul.side-menu{
+    list-style: none;
+}
+
+ul.side-menu li{
+    padding: 10px 10px;
+    border-bottom: 1px solid #dddddd;
+    color: #666666;
+}
+
+.side-menu a{
+    text-decoration: none;
+}
+
+ul.side-menu li:hover{
+    color: #0F3ADA;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+
+
+.side-box2{
+    margin:  15px 0;
+}
+
+.list-photo{
+    overflow: hidden;
+}
+.list-photo img{
+    width: 18%;
+    float: left;
+    margin-right: 5px;
+}
+
+.list-photo-img {
+    max-width: 100%;
+    height:auto; 
+
+}
+
+.list-photo p{
+    font-size: 11px;
+    margin: 0 5px;
+    line-height: 1.2;
+}
+
+.product{
+    color: #0F3ADA;
+}
+
+.company{
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+.company-info{
+    text-align: center;
+    font-size: 12px;
+    margin:5px 0 10px 0;
+}
+
+
+.footer{
+    background-color: #0F3ADA;
+    color: #ffffff;
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+    
+}
+
+.footer-under{
+    font-size: 12px;
+    margin-top: 5px;
+    line-height: 1;
+}
+
+.footer a{
+    text-decoration:none;
+    color: #ffffff;
+}
+
+.footer a:hover{
+    color: #0F3ADA;
+    transition: 0.3s;
+}
+
+/*company*/
+/*.menu-company{
+    position: relative;
+    background-color:#E6EBFA ;
+
+}
+.menu-company::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-color: #0F3ADA;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}*/
+
+
+
+table {
+    color: #666666;
+    width: 100%;
+    font-size: 14px;
+}
+
+table.update-info th {
+    padding-left: 10px;
+    height: 30px;
+}
+
+table.sample {
+    border-collapse: collapse;
+}
+
+
+table.sample th {
+    border:1px solid #C0C0C0;
+    width: 20%;
+    text-align: center;
+    font-weight: normal;
+    padding-left: 15px;
+    padding: 10px 0;
+}
+
+
+table.sample td {
+    border:1px solid #C0C0C0;
+    padding-left: 15px;
+    padding: 10px;
+}
+
+table.sample a{
+    color: #666666;
+}
+
+.grey {
+    background-color: #cccccc;
+    border-radius: 5px;
+    padding: 5px 13px;
+    color: #222222;
+}
+
+/*service*/
+
+.list{
+    overflow: hidden;
+    border: 1px solid #cccccc;
+    background  : linear-gradient(to bottom, #ffffff, #eeeeee);
+    box-shadow: 2px 4px 5px #dddddd ;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.list:hover{
+    background-color: #ffffff;
+}
+
+
+.list a{
+    text-decoration: none;
+}
+
+.list img{
+    width: 30%;
+    float: left;
+    margin: 20px 10px 0px 20px;
+}
+
+
+
+.list h4{
+    font-size: 18px;
+    font-weight: normal;
+    color:#0F3ADA;
+    margin-bottom: 0;
+}
+
+.list p{
+    margin: 0 20px 0px 20px;
+    color: #666666;
+}
+.list:not(:last-child) p:hover{
+    color: #0F3ADA;
+}
+
+
+
+.list-title{
+    margin-left: 20px;
+}
+
+table.sample1 {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+table.sample1 th {
+    border:1px solid #C0C0C0;
+    width: 20%;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+table.sample1 td {
+    border:1px solid #C0C0C0;
+    padding-left: 15px;
+    height: 50px;
+}
+
+/*link*/
+th a:hover{
+    color: #0F3ADA;
+    text-decoration: none;
+}
+
+/*contact*/
+.red{
+    color: #FF0000;
+}
+
+.btn{
+    text-align: center;
+}
+
+button{
+    padding: 7px;
+    background  : linear-gradient(to bottom, #ffffff, #eeeeee);
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    text-align: center;
+}
