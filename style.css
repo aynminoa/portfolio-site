@@ -359,6 +359,10 @@ textarea{
 
 
 @media screen and (max-width:780px){
+    .block1{
+        padding: 50px 0px 150px;
+    }
+    
     .block1 p {
         padding-left: 0;
     }
@@ -367,8 +371,11 @@ textarea{
         font-size: 45px;
     }
 
+    .block2 {
+        padding: 50px 0;
+    }
     .block2 p{
-        padding-left: 15%;
+        padding-left: 10%;
     }
 
     .about{
