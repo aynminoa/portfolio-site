@@ -1,9 +1,57 @@
-body{
+body {
     margin: 0;
-    font:Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
 
-.container{
+#page_top {
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+}
+
+#page_top a {
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-decoration: none;
+}
+
+#page_top a::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #CC0000;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+#page_top a::after {
+    content: 'PAGE TOP';
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    color: #CC0000;
+}
+
+.container {
     padding: 0;
     margin: 0;
 }
@@ -11,93 +59,133 @@ body{
 
 .block1 {
     color: #1a1a1a;
-    background: rgba(124,85,6,0.2);
-  }
+    background: rgba(124, 85, 6, 0.2);
+}
+
 .block1 p {
     /*width: 60%;*/
+    display: none;
     margin: 0 auto;
     padding-top: 20px;
     padding-left: 25%;
     font-size: 25px;
     text-align: center;
-    color: 	#FFF;
+    color: #FFF;
 }
 
-.block1 .name{
+.block1 .name {
+    display: none;
     font-size: 70px;
     margin-top: 20px;
 }
 
-.block1 .red{
+.block1 .red {
     color: #CC0000;
 }
-  
+
 .block2 {
     /*レイアウト用のCSS*/
     padding: 0 0 10px 0;
     color: #ccc;
 }
+
 .block1 {
     position: relative;
     padding: 100px 0 200px 0;
-    
+
 }
+
 .block2 {
     position: relative;
     z-index: 0;
-    padding:10px 0 100px 0;
-    background:#FFF;
+    padding: 10px 0 100px 0;
+    background: #FFF;
 }
-.block2::after{
+
+.block2::after {
     content: '';
     position: absolute;
-    left:0;
+    left: 0;
     top: 0;
-   
+
     /*四角形を傾けます*/
     transform: skewY(6deg);
     transform-origin: top right;
-   
+
     z-index: -1;
-    width:100%;
-    height:100%;
-    background:#FFF;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
 }
 
-.block2 p{
+.block2 p {
     font-size: 18px;
     letter-spacing: 6;
     padding-bottom: 20px;
     padding-left: 20%;
 }
 
-.block2 a{
+.block2 a {
     color: #ccc;
 }
 
-.block2 a:hover{
+.block2 a:hover {
     text-decoration: none;
     color: #CC0000;
 }
 
-.container-fluid{
+.container-fluid {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.inner{
+.inner {
     width: 100%;
 }
 
-.about{
+.about {
     width: 100%;
     margin: 0 auto;
-    padding-top:60px;
+    padding-top: 60px;
     padding-bottom: 120px;
-    background-color: rgba(124,85,6,0.2);
+    background-color: rgba(124, 85, 6, 0.2);
 }
 
-.about h2{
+.about-inner {
+    opacity: 0.1;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+.about-inner.scrollin {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skills-inner {
+    opacity: 0.1;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+.skills-inner.scrollin {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.works-inner {
+    opacity: 0.1;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+.works-inner.scrollin {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.about h2 {
     color: #fff;
     font-size: 35px;
     position: relative;
@@ -106,52 +194,52 @@ body{
     text-align: center;
 }
 
-.about h2::after{
-    content:"";
-   display:block;
-   width:80px;
-   height:3px;
-   background-color:#CC0000;
-   position:absolute;
-   bottom:-10;
-   left:47%;
+.about h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #CC0000;
+    position: absolute;
+    bottom: -10;
+    left: 47%;
 }
 
-.a-left{
+.a-left {
     width: auto;
     height: 320px;
     background: url(images/me.png);
-    background-size:cover;
+    background-size: cover;
     background-position: left center;
 }
 
-.a-right{
-    margin-left:40px;
+.a-right {
+    margin-left: 40px;
 }
 
 
-.a-name{
+.a-name {
     font-size: 25px;
     margin-bottom: 20px;
 }
 
-.white{
+.white {
     font-size: 16px;
     color: #fff;
 }
 
-.a-right p{
+.a-right p {
     margin-bottom: 30px;
     line-height: 1.5;
 }
 
 
-.skills{
-    padding-top:60px;
+.skills {
+    padding-top: 60px;
     padding-bottom: 100px;
 }
 
-.skills h2{
+.skills h2 {
     color: #ccc;
     font-size: 35px;
     position: relative;
@@ -160,85 +248,87 @@ body{
     text-align: center;
 }
 
-.skills h2::after{
-    content:"";
-   display:block;
-   width:40px;
-   height:3px;
-   background-color:#CC0000;
-   position:absolute;
-   bottom:-10;
-   left:48.5%;
+.skills h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #CC0000;
+    position: absolute;
+    bottom: -10;
+    left: 48.5%;
 }
 
-.skills p{
-    line-height:1.5;
+.skills p {
+    line-height: 1.5;
     font-size: 14px;
 }
 
-.coding{
+.coding {
     text-align: center;
 
 }
 
-.s-images{
+.s-images {
     display: flex;
     justify-content: center;
-    
+
 }
 
-.s-images img{
-    width:32%;
+.s-images img {
+    width: 32%;
     padding: 20px 10px;
 }
 
-.s-coding{
+.s-coding {
     margin: 10px 20px 20px;
 }
-.s-html{
+
+.s-html {
     margin-left: 15px;
 }
 
-.s-images .smartphone{
+.s-images .smartphone {
     margin-top: 20px;
     padding-left: 0;
     height: 100%;
 }
 
-.design{
+.design {
     text-align: center;
 }
 
-.s-design{
+.s-design {
     margin-top: 35px;
     margin-bottom: 10px;
 }
 
-.s-other{
+.s-other {
     margin-top: 35px;
     margin-bottom: 10px;
 }
 
-.s-other .wordpress{
+.s-other .wordpress {
     width: 32%;
 }
 
-.s-other .lang{
+.s-other .lang {
     width: 45%;
     height: 100%;
     margin-top: 10px;
 }
 
-.other{
+.other {
     text-align: center;
 }
-.works{
-    padding-top:60px;
+
+.works {
+    padding-top: 60px;
     padding-bottom: 70px;
-    background-color: rgba(124,85,6,0.2);
+    background-color: rgba(124, 85, 6, 0.2);
 }
 
-.works h2{
+.works h2 {
     color: #fff;
     font-size: 35px;
     text-align: center;
@@ -247,48 +337,48 @@ body{
     letter-spacing: 1.2;
 }
 
-.works h2::after{
-   content:"";
-   display:block;
-   width:50px;
-   height:3px;
-   background-color:#CC0000;
-   position:absolute;
-   bottom:-10;
-   left:48.5%;
+.works h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #CC0000;
+    position: absolute;
+    bottom: -10;
+    left: 48.5%;
 }
 
-.works p{
+.works p {
     font-size: 14px;
     margin-bottom: 40px;
     margin-top: 20px;
     text-align: center;
 }
 
-.works img{
+.works img {
     width: 100%;
     margin: 0 auto;
 }
 
-.w-list{
+.w-list {
     position: relative;
 }
 
-.w-list:hover img{
+.w-list:hover img {
     opacity: 0.6;
     transition: all 0.3s;
 }
 
-.w-list .comingmore{
+.w-list .comingmore {
     padding-top: 80px;
 }
-    
-.contact{
-    padding-top:60px;
+
+.contact {
+    padding-top: 60px;
     padding-bottom: 50px;
 }
 
-.contact h2{
+.contact h2 {
     color: #ccc;
     font-size: 35px;
     position: relative;
@@ -297,48 +387,52 @@ body{
     text-align: center;
 }
 
-.contact h2::after{
-    content:"";
-   display:block;
-   width:70px;
-   height:3px;
-   background-color:#CC0000;
-   position:absolute;
-   bottom:-10;
-   left:47%;
+.contact h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #CC0000;
+    position: absolute;
+    bottom: -10;
+    left: 47%;
 }
 
-.contact p{
+.contact p {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.form{
-    width:600px ;
+.form {
+    width: 600px;
     margin: 0 auto;
 }
 
-label{
+label {
     display: block;
     padding-bottom: 20px;
 }
 
-input{
+.label_title {
+    margin-bottom: 10px;
+}
+
+input {
     display: block;
     width: 100%;
 }
 
-textarea{
+textarea {
     display: block;
     width: 100%;
 }
 
-.form_content{
+.form_content {
     margin-bottom: 30px;
 }
 
-.button{
-    background:#CC0000;
+.button {
+    background: #CC0000;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -349,100 +443,107 @@ textarea{
     margin: 0 auto;
 }
 
-.footer{
+.footer {
     padding: 30px 0;
-    background: rgba(124,85,6,0.2);
+    background: rgba(124, 85, 6, 0.2);
     color: #FFF;
     text-align: center;
 }
 
 
 
-@media screen and (max-width:780px){
-    .block1{
+@media screen and (max-width:780px) {
+    .block1 {
         padding: 50px 0px 150px;
     }
-    
+
     .block1 p {
         padding-left: 0;
     }
 
-    .block1 .name{
+    .block1 .name {
         font-size: 45px;
     }
 
     .block2 {
         padding: 50px 0;
     }
-    .block2 p{
+
+    .block2 p {
         padding-left: 10%;
     }
 
-    .about{
+    .about {
         padding-bottom: 50px;
     }
-    .about h2{
+
+    .about h2 {
         font-size: 25px;
     }
-    .about h2::after{
+
+    .about h2::after {
         width: 35px;
     }
 
-    .inner{
+    .inner {
         width: 100%;
     }
 
-    .a-right{
+    .a-right {
         margin-top: 50px;
         margin-left: 0;
     }
 
-    .skills h2::after{
+    .skills h2::after {
         width: 30px;
         left: 47%;
     }
 
-    .coding{
+    .coding {
         margin-bottom: 80px;
     }
 
-    .design{
+    .design {
         margin-bottom: 80px;
     }
-    .s-design{
+
+    .s-design {
         margin-top: 10px;
     }
 
-    .s-other{
+    .s-other {
         margin-top: 10px;
     }
-    .s-other .lang{
+
+    .s-other .lang {
         margin-top: 20px;
     }
 
-    .works h2::after{
+    .works h2::after {
         width: 30px;
         left: 47%;
     }
 
-    .works p{
+    .works p {
         margin-bottom: 60px;
     }
-    .w-list .caption{
+
+    .w-list .caption {
         padding-top: 150px;
     }
+
     .w-list .mask {
         width: 95.5%;
-        height:91.5%;
+        height: 91.5%;
     }
 
-    .contact h2::after{
+    .contact h2::after {
         width: 30px;
         left: 47%;
     }
 
 
-    .form{
+    .form {
         width: 320px;
     }
 }
