@@ -56,7 +56,6 @@ body {
     margin: 0;
 }
 
-
 .block1 {
     color: #1a1a1a;
     background: rgba(124, 85, 6, 0.2);
@@ -129,6 +128,7 @@ body {
 .block2 a:hover {
     text-decoration: none;
     color: #CC0000;
+    transition: 0.4s;
 }
 
 .container-fluid {
@@ -226,7 +226,7 @@ body {
 }
 
 .a-right p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     line-height: 1.5;
 
 }
@@ -369,9 +369,9 @@ body {
     position: relative;
 }
 
-.w-list:hover img {
+.w-list-img:hover{
     opacity: 0.6;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
 .w-list .comingmore {
@@ -476,6 +476,7 @@ textarea {
 
     .block2 p {
         padding-left: 10%;
+        letter-spacing: 1;
     }
 
     .about {
@@ -497,6 +498,14 @@ textarea {
     .a-right {
         margin-top: 50px;
         margin-left: 0;
+    }
+
+    .a-name{
+        font-size:18px;
+    }
+
+    .a-right p{
+        font-size:14px;
     }
 
     .skills h2::after {
@@ -547,8 +556,12 @@ textarea {
         left: 47%;
     }
 
-
     .form {
         width: 320px;
     }
+
+    .label_title {
+    margin-bottom: 12px;
 }
+}
+
