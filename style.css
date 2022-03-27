@@ -567,12 +567,24 @@ textarea {
         left: 47%;
     }
 
+    .contact p{
+        font-size: 14px;
+    }
+
     .form {
         width: 320px;
     }
 
     .label_title {
+    font-size: 14px;
     margin-bottom: 12px;
+}
+.button{
+    font-size: 14px;
+}
+
+.footer{
+    font-size: 12px;
 }
 }
 
